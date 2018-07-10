@@ -1,0 +1,7 @@
+---
+# IP
+private_network: 192.168.162.201
+public_network: 192.168.0.201
+
+# gitのソースパス
+HRSource: "source/"
