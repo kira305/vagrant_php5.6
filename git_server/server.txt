@@ -1,0 +1,38 @@
+
+検証用サーバー情報
+サーバー：plc3.hyperion.co.jp
+接続方法 ：SSH
+Port番号：10023
+ファイル保管場所(file path) ：/var/www/testvn.hyperion-job.jp
+133.242.148.163
+userID : tphuong  1qaz2wsx
+P/W : yAfty6vJ
+mysql -u root -p
+root
+admin1q2w3e4r
+
+Server information
+	ドメイン：sp.hyperion-job.com
+	IPアドレス：153.126.185.139
+	ユーザ名：root
+	パスワード：Tyie_Rn8se
+	接続方法：ssh
+/var/www/sp.hyperion-job.com
+----/mysql/---------------
+user :root hradmin
+pass :hyperAdmin@165!
+---------------
+
+----/mysql login/---------------
+user :hypervn
+pass :hyperJob@67!
+---------------
+sudo apt-get install php5.6-gd
+---------------------------
+vagrant information : 
+192.168.33.33
+/etc/httpd/conf
+--------------------------
+/var/lib/php/session
+/var/www/testjp.hyperion-job.jp/html
+sudo service httpd restart
