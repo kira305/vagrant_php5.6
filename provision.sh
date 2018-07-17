@@ -2,8 +2,8 @@ LANG="ja_JP.utf8"
 # vagrant add box list
 # vagrant box add centos67 https://github.com/CommanderK5/packer-centos-template/releases/download/0.6.7/vagrant-centos-6.7.box
 # vagrant box add centos72 https://github.com/CommanderK5/packer-centos-template/releases/download/0.7.2/vagrant-centos-7.2.box
-# vagrant update hostupdate
-# vagrant plugin install vagrant-hostupdate
+# vagrant update hostsupdater
+# vagrant plugin install vagrant-hostsupdater
 
 sudo yum update
 # httpd install
