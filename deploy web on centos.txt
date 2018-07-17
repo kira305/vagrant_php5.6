@@ -1,0 +1,66 @@
+B1: Tạo CSDL
+use mysql;
+grant all privileges on *.* to 'sa'@'%' identified by "phuongadmin" ;
+select user, host from user;
+
+
+B2: Giải nén thư mục Code và đưa vào thư mục cần thiết (vd thư mục gốc là PROJECT)
+
+B3: Mở file /PROJECT/config/app.php( nếu chưa có thì đổi tên app.default.php thành app.php)
+	Tìm tới phần cấu hình Database (~ dòng 243 (Datasources) )
+		Cấu hình lại thông tin kết nối cho phù hợp
+	
+B4: về thư mục gốc PROJECT
+	chạy lệnh ở commandline: sudo composer install 
+	chờ để lệnh này chạy xong.
+	
+B5: tạo vitual host để truy cập website
+	
+	chạy lệnh: sudo vi /etc/httpd/conf/httpd.conf
+	di chuyển tới cuối file
+	bấm i để chỉnh sửa file
+	thêm các dòng cấu hình cho website mới(chỉnh sửa trước ở file text rồi copy vào đó cho dễ)
+	
+	<VirtualHost *:80>
+		ServerAdmin admin@sp.hyperion-job.com/  # thay đổi dòng này
+		ServerName sp.hyperion-job.com/  # thay đổi dòng này
+		ServerAlias sp.hyperion-job.com/  # thay đổi dòng này
+		DocumentRoot /var/www/sp.hyperion-job.com # thay đổi dòng này
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+	</VirtualHost>
+	
+	<VirtualHost *:80>
+		ServerAdmin admin@sp.hyperion-job.com
+		ServerName vagrant.sp.hyperion-job.com
+		ServerAlias vagrant.sp.hyperion-job.com
+		DocumentRoot /var/www/html/sp.hyperion-job.com
+		ErrorLog "logs/dummy-host2.example.com-error.log"
+		CustomLog "logs/dummy-host2.example.com-access.log" common
+</VirtualHost>
+	
+	bấm nút ESC để thoát chế độ Insert
+	bấm :wq để (write và quit) file
+	
+B6: add host trên server
+	gõ lệnh: sudo vim /etc/hosts
+	127.0.0.1       vagrant.sp.hyperion-job.com
+	bấm i để chỉnh sửa file
+	thêm vào dòng: IP_CUA_MAY_CHU ten_web_site( ví dụ: 192.168.0.200 dantri.com)
+	bấm nút ESC để thoát chế độ Insert
+	bấm :wq để (write và quit) file
+	
+B7: reload apache server:
+	chạy lệnh: systemctl restart httpd.service
+	
+B8: add host trên máy tính cá nhân
+
+Lưu ý. Trên môi trường thật, không cần addhost trên máy tính cá nhân,
+Cakephp có hệ thống file log DB, và error log. cần phân quyền cho toàn bộ thư mục với user apache( đối với webserver apache) để có thể lưu các file tmp này.
+lệnh phân quyền:
+	chown apache: -R duong_dan_toi_thu_muc_phan_quyen/
+
+--Hết--
+	
+	 
+	
