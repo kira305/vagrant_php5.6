@@ -1,4 +1,4 @@
-
+﻿
 検証用サーバー情報
 サーバー：plc3.hyperion.co.jp
 接続方法 ：SSH
@@ -11,6 +11,9 @@ mysql -u root -p
 root
 admin1q2w3e4r
 
+www2.hyperion.co.jp
+hyperion hypepass
+===============================
 Server information
 	ドメイン：sp.hyperion-job.com
 	IPアドレス：153.126.185.139
@@ -19,8 +22,10 @@ Server information
 	接続方法：ssh
 /var/www/sp.hyperion-job.com
 ----/mysql/---------------
-user :root hradmin
-pass :hyperAdmin@165!
+user :root 
+Admin@4#2!
+user :hradmin
+ hyperAdmin@165!
 ---------------
 
 ----/mysql login/---------------
@@ -33,6 +38,26 @@ vagrant information :
 192.168.33.33
 /etc/httpd/conf
 --------------------------
+matebank product server SSH info:
+- server: matebank.jp
+- port: 10023
+- user/pass: tthai/password1
+
+◇ecsv1.hyperion.co.jp
+ID  : tthai
+P/W : gL15s8m8
+------------------------------------------------
+Thong tin test server cua meglus:
+IP: 13.113.102.61
+DB:
+    - port: 3306
+    - user: bang
+    - pass: bang@hyperion.co.jp
+------------------------------------------------
 /var/lib/php/session
 /var/www/testjp.hyperion-job.jp/html
 sudo service httpd restart
+
+-------------------
+wwwsv1.hyperion.co.jp
+- user/pass: tthai/password1
