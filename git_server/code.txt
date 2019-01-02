@@ -1,0 +1,75 @@
+﻿lay danh sach file khac nhau
+git diff --name-only phuong_20180712 develop
+aaaaaaaaa
+
+git archive --format=zip f557fe6 `git diff --name-only f557fe6 a6e2080` -o matebank_20181220_Diff.zip
+日本語コミュニケーション診断
+
+local.facebooksdk.jp
+openssl req -new -key /etc/httpd/ssl/facebooksdk.com.key -out /etc/httpd/ssl/facebooksdk.com.csr
+openssl req -new -x509 -key /etc/httpd/ssl/facebooksdk.com.key -out /etc/httpd/ssl/facebooksdk.com.cert -days 3650 -subj /CN=facebooksdk.com
+https://local.facebooksdk.jp:443/
+
+Phuong@123
+
+id, first_name, last_name, email, picture.type(large)
+
+EAAJjlFZBRxNUBAPdSyKyfYwtoiWvCW6hREEkhMnYedLOH66xvbWJRCpnaBIGmOm50QgTFsocSLNzCEEZBrsXe10r351tzHOQawUZBqBLTsbYRcE35LZCcTdQbx9YdC1FSlZA7mGqxVpLDWCU11GVYDdc5Sos5fTQKh1hgByRJ1gZDZD
+EAAJjlFZBRxNUBAOy7TKQ0ZB6Klk2vYBJuZCW6p2iqWfz3RCsPcK6IqFCdvsoQ1L0KH5ibZBZAqAvgiqtexVO0ZBTDsriXyToN0VmUiMbDWAt1xlsMkafJxtyYyThcsZAcCCTezb1Eqry1Q1RxpzBE7FQyOy8axvhBHWqEexYQ0GvgZDZD
+pgaming
+
+array (size=3)
+  'username' => string 'kira308' (length=7)
+  'password' => string '123456' (length=6)
+  'group_id' => string '1' (length=1)
+  
+  Backup
+mysqldump -u hradmin -p hyperion_job_com > /home/tphuong/hyperion_job_com.`date +%Y%m%d`.sql (pw : hyperAdmin@165!)
+mysqldump -u hradmin -p hyperion_job_com_test > /tmp/phuongtx/backup.`date +%Y%m%d`/hyperion_job_com_test.`date +%Y%m%d`.sql
+
+mysql -u hradmin -p
+mysql -u hyperion-job -p
+
+mysql -u root -e "CREATE DATABASE orangehrm_test DEFAULT CHARACTER SET utf8;"
+mysql -u root -e "GRANT ALL PRIVILEGES ON orangehrm_test .* TO 'hradmin'@'%';"
+
+CREATE DATABASE orangehrm;
+CREATE USER 'orangehrm_user'@'localhost' IDENTIFIED BY 'phuongadmin';
+GRANT ALL PRIVILEGES ON orangehrm412.* TO 'orangehrm_user'@'localhost';
+
+mysql -u root -e "CREATE DATABASE orangehrmtest;"
+mysql -u root -e "CREATE USER 'hrm_user_test'@'localhost' IDENTIFIED BY 'phuongadmin';"
+mysql -u root -e "GRANT ALL PRIVILEGES ON orangehrmtest.* TO 'hrm_user_test'@'localhost';"
+FLUSH PRIVILEGES;
+mysql -u orangehrm_user -p
+
+DROP USER 'orangehrm_user'@'localhost';
+
+
+git merge phuong_20180705 --no-ff
+
+
+
+git fetch --all
+git checkout phuong_homepage
+git checkout develop
+git -df
+
+mysql ssh tunel
+ssh -L 3308:localhost:3306 bang@13.113.102.61 -p 10023
+ssh -L 3308:localhost:3306 tphuong@133.242.148.163 -p 10023  (pw: yAfty6vJ)
+ssh -L 3308:localhost:3306 tthai@matebank.jp -p 10023  (pw: password1)
+ssh -L 3308:localhost:3306 root@153.126.185.139 -p 10023   (pw: Tyie_Rn8se)
+
+mysqldump -u matebank -p eccube_matebank > /home/tthai/eccube_matebank.`date +%Y%m%d`.sql
+mysqldump -u hyperion_job_com -p eccube_matebank > /home/tthai/eccube_matebank.`date +%Y%m%d`.sql
+
+define('DB_PASSWORD', 'mate1qaz2wsx');
+
+zip -r /home/tthai/matebank.zip matebank.jp
+zip -r /home/tthai/matebanksql.zip eccube_matebank.`date +%Y%m%d`.sql
+
+sudo cp -rp  LC_Page_Admin_Products_UploadCSVWL.php  matebank.jp/data/class/pages/admin/products/
+
+git archive --format=zip 2184a48 `git diff --name-only 2184a48 cc18e99` -o corporate_20181203_Diff.zip
+sudo cp -rp /home/tphuong/phuong_20180710/hyperion-job.com/data /var/www/test/hyperion-job.com
